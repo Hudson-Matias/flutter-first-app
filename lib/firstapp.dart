@@ -4,13 +4,13 @@ void main() {
   // collectionWithMaps();
 }
 
-// int calculate() {
-//   return 6 * 7;
-// }
+ int calculate() {
+   return 6 * 7;
+ }
 
-// // num soma(int a, double b) {
-// //   return a + b;
-// // }
+num soma(int a, double b) {
+  return a + b;
+}
 
 // void collectionWithMaps() {
 //   Vehicle onix2024 = Vehicle.year2024(210, "Chevrolet", "Onix", 80.000);
