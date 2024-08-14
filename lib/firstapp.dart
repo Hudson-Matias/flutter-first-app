@@ -1,66 +1,66 @@
 import 'package:firstapp/models/vehicle.dart';
 
 void main() {
-  collectionWithMaps();
+  // collectionWithMaps();
 }
 
-int calculate() {
-  return 6 * 7;
-}
-
-// num soma(int a, double b) {
-//   return a + b;
+// int calculate() {
+//   return 6 * 7;
 // }
 
-void collectionWithMaps() {
-  Vehicle onix2024 = Vehicle.year2024(210, "Chevrolet", "Onix", 80.000);
-  Vehicle polo2024 = Vehicle.year2024(210, "VolksWagen", "Polo", 82.000);
+// // num soma(int a, double b) {
+// //   return a + b;
+// // }
 
-  // Map<int, List<Vehicle>> cars = {
-  //   2024: [onix2024, polo2024]
-  // };
+// void collectionWithMaps() {
+//   Vehicle onix2024 = Vehicle.year2024(210, "Chevrolet", "Onix", 80.000);
+//   Vehicle polo2024 = Vehicle.year2024(210, "VolksWagen", "Polo", 82.000);
 
-  Map<int, Map<List<Vehicle>, String>> cars = {
-    1: {[]:"Chevrolet"},
-    2: {[]:"Chevrolet"}
-  };
+//   // Map<int, List<Vehicle>> cars = {
+//   //   2024: [onix2024, polo2024]
+//   // };
 
-  Vehicle hb20 = Vehicle.year2024(210, "Hyundai", "HB20", 84.000);
+//   Map<int, Map<List<Vehicle>, String>> cars = {
+//     1: {[]:"Chevrolet"},
+//     2: {[]:"Chevrolet"}
+//   };
 
-  // cars[2024]?.add(hb20);
-}
+//   Vehicle hb20 = Vehicle.year2024(210, "Hyundai", "HB20", 84.000);
 
-void methodcollecion() {
-  Vehicle onix = Vehicle(312, "Chevrolet", "Onix", 2024, 89000.00);
-  Vehicle polo = Vehicle(313, "VolksWagen", "Polo", 2024, 94000.00);
-  Vehicle hyundai = Vehicle(322, "Hyundai", "HB20", 2024, 96100.00);
-  Vehicle strada = Vehicle(319, "Fiat", "Strada", 2024, 92000.00);
+//   // cars[2024]?.add(hb20);
+// }
 
-  List<Vehicle> cars = [onix, polo, hyundai, strada];
+// void methodcollecion() {
+//   Vehicle onix = Vehicle(312, "Chevrolet", "Onix", 2024, 89000.00);
+//   Vehicle polo = Vehicle(313, "VolksWagen", "Polo", 2024, 94000.00);
+//   Vehicle hyundai = Vehicle(322, "Hyundai", "HB20", 2024, 96100.00);
+//   Vehicle strada = Vehicle(319, "Fiat", "Strada", 2024, 92000.00);
 
-  List<Vehicle> orcamento =
-      cars.where((car) => car.getValue() <= 95000.00).toList();
+//   List<Vehicle> cars = [onix, polo, hyundai, strada];
 
-  orcamento.forEach((car) {
-    print("${car.getBrand()} : ${car.getModel()}");
-  });
+//   List<Vehicle> orcamento =
+//       cars.where((car) => car.getValue() <= 95000.00).toList();
 
-  List<int> numbers = [1, 2, 5, 8, 14];
-  numbers.add(15);
-  numbers.add(8);
+//   orcamento.forEach((car) {
+//     print("${car.getBrand()} : ${car.getModel()}");
+//   });
 
-  print("Lista de numeros: $numbers");
+//   List<int> numbers = [1, 2, 5, 8, 14];
+//   numbers.add(15);
+//   numbers.add(8);
 
-  Set<int> numbersOdds = {1, 3, 5, 7, 9}; // odds é ímpares
-  numbersOdds.add(7);
-  numbersOdds.add(11);
+//   print("Lista de numeros: $numbers");
 
-  print("Set numeros impares: $numbersOdds");
+//   Set<int> numbersOdds = {1, 3, 5, 7, 9}; // odds é ímpares
+//   numbersOdds.add(7);
+//   numbersOdds.add(11);
 
-  Map<int, List<String>> shop = {
-    14: ["Carne", "Carvão", "Pinga", "Farofa"],
-    10: ["Gelatina", "Doce de Leite"]
-  };
+//   print("Set numeros impares: $numbersOdds");
 
-  print("Minha coleção de compras $shop");
-}
+//   Map<int, List<String>> shop = {
+//     14: ["Carne", "Carvão", "Pinga", "Farofa"],
+//     10: ["Gelatina", "Doce de Leite"]
+//   };
+
+//   print("Minha coleção de compras $shop");
+// }
